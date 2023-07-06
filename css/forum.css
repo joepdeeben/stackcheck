@@ -1,0 +1,68 @@
+
+main{
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    font-size: 1.1rem;
+}
+
+.forum-threads {
+    border: 2px solid #000;
+    background-color: #ADD8E6;
+}
+
+.content {
+    width: 300px;
+    height: 50px;
+}
+
+.vakken ul li {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 10px;
+    display: inline-block;
+}
+.vakken ul {
+    text-align:center;
+}
+.maakthread{
+    border: 2px solid #000;
+}
+.opgave {
+    border: 2px solid #000;
+    background-color: #ADD8E6;
+}
+
+.post {
+    border: 2px solid #000;
+    background-color: #ADD8E6;
+    text-align: left;
+}
+
+.post-info {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+.post_form {
+    border: 2px solid #000;
+    background-color: #ADD8E6;
+    text-align: left;
+}
+
+.thread-posts {
+  max-height: 470px;
+  overflow: scroll;
+}
+
+.vakken {
+    border: 2px solid #000;
+    background-color: #ADD8E6;
+    text-align: center;
+}
+a {
+    color: blue;
+}

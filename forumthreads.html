@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/stylemain.css">
+  <meta name="viewport" content="with=device-width, initialscale=1.0">
+  <title>Forum</title>
+</head>
+
+<body>
+
+<iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+<link rel="stylesheet" href="css/forum.css">
+
+<main>
+
+  <section class="post_form">
+    <h2>Post</h2>
+    <form id="input">
+      <p>Bericht</p>
+      <textarea class="content" name="content"></textarea>
+      <button onclick="addComment()" type="button" class="submitquestion">Posten</button>
+    </form>
+  </section>
+  <h2>Recente posts</h2>
+
+  <div id="thread-posts" class="thread-posts">
+    <div class="post">
+      <div class="post-info">
+        <div id="username"><b>Username</b></div>
+        <div id="datum"><b>Datum</b></div>
+      </div>
+      <div class="post-content">
+        <h4>Post Titel</h4>
+        <p>De inhoud van de post</p>
+      </div>
+      <div class="post-acties">
+        <a href="#">Beantwoorden</a>
+        <!--        <a href="#">Edit</a>--> <!--deze twee moeten alleen geïnsert worden als de post van de user die ingelogged is-->
+        <!--        <a href="#">Delete</a>-->
+      </div>
+    </div>
+
+  </div>
+
+
+</main>
+<iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+<script src="javascript/forum.js"></script>
+</body>
+</html>
+<script src="javascript/forum.js"></script>

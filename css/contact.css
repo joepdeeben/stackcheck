@@ -1,0 +1,181 @@
+:root{
+    --bg-color: #304ba3;
+    --text-color: white;
+    --main-color: #29fd53;
+    --hover-color: #8bced7;
+    --background-color: rgba(212, 225, 226, 0.937);
+    --div-color: #a9dce3;
+}
+
+*{
+    background-color:var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    max-width: 100%;
+
+}
+.header{
+    background: var(--bg-color);
+    position: relative;
+    width: 98%;
+    left: -8px;
+    right: -8px;
+    top:-10px;
+    height: 30px;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    
+}
+.person{
+    background: var(--div-color);
+    float: left;
+    padding-left: 1%;
+    margin: 20px;
+    width: 30%;
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 450px;
+    border-radius: 20px;
+}
+.person-name{
+    background-color: transparent;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 20%;
+    float: right;
+}
+.person-names{
+   margin-right: 35%;
+   background: transparent;
+   float: right;
+   padding-top: 20px;
+   text-align: center;
+}
+.person-names p{
+    background: transparent;
+}
+.person-names p:hover{
+    color: gray;
+    transition: .5s ease;
+}
+.person-name i{
+    background-color: transparent;
+}
+.user-image{
+    background-color: transparent;
+    float: left;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.user-image-image{
+    width: 80%;
+    background-color: var(--main-color);
+    border-radius: 100px;
+    max-width: 130px;
+}
+.user-image-image:hover{
+    width: 85%;
+    transition: .5s ease;
+    cursor: grab;
+}
+.contact-infos{
+    padding-top: 30px;
+    background:transparent;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 400px;
+    max-height: 300px;
+}
+.contact-info{
+    padding-top: 30%;
+    padding-bottom: 30px;
+    background:transparent;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 50px;
+    min-width: 400px;
+    
+    
+}
+.contact-info a, .contact-infos a{
+    background-color: transparent;
+    color: black;
+}
+.contact-info a:hover{
+    color: rgb(113, 115, 116);
+    font-size: larger;
+    transition: .5s ease;
+}
+
+button
+{
+  height:30px;
+  width:150px;
+  border-radius:8px;
+  padding:10px;
+  font-size:20px;
+  font-family: 'Oswald', sans-serif;
+  height:52px;
+  cursor:pointer;
+  background-color:wheat;
+}
+.person:hover{
+    transition: .5s;
+    background: var(--hover-color);
+    
+}
+
+/* form */
+
+form {
+    margin: 10px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+
+  label, input, textarea {
+    display: block;
+    margin: 10px 0;
+    
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, textarea, select, option, a {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--bg-color);
+    border-radius: 5px;
+  }
+  select, option{
+    width: 12%;
+  }
+
+  input[type="submit"], a {
+    background: var(--bg-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background: #3857bb;
+    transition: .5s ease;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+  }
+  

@@ -1,0 +1,656 @@
+* {
+
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+
+:root{
+    --bg-color: #304ba3;
+    --text-color: white;
+    --main-color: #29fd53;
+}
+
+body{
+    min-height: 200vh;
+    background:white;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+header{
+    position: relative;
+    width: 101%;
+    top: -10px;
+    right: 0;
+    left: -10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    /* padding: 28px 12%; */
+    transition: all .5s ease;
+    height:80px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;  
+}
+    
+
+#dothis {
+    color: black;
+    font-size: 80px;
+    margin: 20px;
+    text-align: left;
+}
+/* header is hier onder */
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    size: 10em;
+    
+}
+
+.logo i{
+    color: var(--text-color);
+    font-size: 28px;
+    margin-right: 7px;
+}
+.logo span{
+    color:var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navigatie{
+    display: flex;
+   
+}
+.navigatie a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navigatie a:hover{
+    color: var(--bg-color);
+    
+
+}
+.navigatie a.active{
+    color: var(--main-color)
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.inbox i{
+    color: green
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user i{
+    color: var(--text-color);
+    font-size: 28px;
+    margin-right: 7px;
+}
+.main a:hover{
+    color: var(--main-color);
+}
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+@media (max-width: 1200px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navigatie a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navigatie{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transform: all .50s ease;
+    }
+    .navigatie a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;;
+    }
+    .navigatie a:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+    .navigatie a.active{
+        color: var(--text-color);
+    }
+    .navigatie.open{
+        right: 2%
+    }
+}
+/* einde header */
+/* begin footer */
+footer {
+    background-color: var(--bg-color);
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content:space-around;
+    padding-left: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    left: 0;
+    right:0;
+    padding-top:30px;
+    
+  }
+  
+  .people-info, .contact-info, .button {
+    flex-grow: 1;
+    padding-left: 1%;
+    
+  }
+  .more-info{
+    padding-right:4%;
+  }
+  
+  .people-info h4 {
+   margin:-1;
+  }
+  
+  a {
+    color: #fff;
+    
+  }
+  /*-- dropdown --*/
+
+.dropbtn {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  min-width: 250px;
+}
+.dropbtn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    min-width: 250px;
+    transition: .0s ease;
+  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown:hover {
+    color: var(--bg-color);
+    border-top-right-radius: 10px ;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,01);
+  z-index: 1;
+  min-width: 250px;
+  border-bottom-left-radius: 15px ;
+}
+
+.dropdown-content a {
+  color: var(--bg-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: transparent;
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+*/
+.dropdown:hover .dropbtn:hover {
+    background-color: yellow; 
+    color: var(--main-color);
+}
+.uva{
+    margin-left: 10px;
+}
+.achtergrond{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.main-div-head{
+    margin-left:10%;
+    margin-top: 1%;
+    color: var(--bg-color);
+    font-size:30px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+}
+.main-div{
+    margin-left: 5%;
+    margin-top: 1%;
+    color: var(--bg-color);
+    font-size:20px;
+    width: 90%;
+    height: 200%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content:space-between
+}
+.inmain, .inmain-mid {
+    transform:
+      perspective(800px)
+      rotateX(-1deg);
+    transition: transform 1s ease 0s;
+    border-radius: 4px;
+    box-shadow:
+      rgba(0, 0, 0, 0.149) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+      rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+      rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+}
+.inmain:hover, .inmain-mid:hover {
+      transform: perspective(800px) rotateY(-4deg);
+    }
+  
+.inmain{
+    padding: 10px;
+    border: 3px solid var(--bg-color);
+    width: 25%;
+}
+.inmain-mid{
+    padding: 10px;
+    border: 3px solid var(--bg-color);
+    width: 40%;
+    height: fit-content;
+}
+.titel-main{
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+.leaderboard, .leaderboard-user, .leaderboard-username {
+    
+
+    margin:8px;
+    border: 3px
+}
+.leaderboard-user1, .leaderboard-user2, .leaderboard-user3{
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid var(--bg-color);
+    margin: 8px;
+}
+.leaderboard-user1:hover{
+    background-color: gold;
+    transition: .3s ease;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid goldenrod;
+}
+.leaderboard-user2:hover{
+    background-color: silver;
+    transition: .3s ease;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid rgb(165, 165, 165);
+}
+.leaderboard-user3:hover{
+    background-color: #d28c47;
+    transition: .3s ease;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid rgb(151, 114, 22)
+}
+.leaderboard-userprofile{
+    border-radius: 50%;
+    margin: 6px;
+    
+}
+.leaderboard-username, .leaderboard-userxp{
+    position: absolute;
+    padding: 10px;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+.leaderboard-userxp{
+    width: 20%;
+    right: 0;
+    padding-top: 3%;
+    
+}
+.message-main{
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.titel {
+    color: var(--bg-color);
+}
+.homebtn {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 1px;
+    font-size: 18px;
+    border: none;
+  }
+
+  .dropdown-contentbutton {
+    background-color: var(--text-color);
+  color: var(--bg-color);
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  min-width: 250px;
+}
+.jarencheckbox {
+color: black;
+font-size: 40px;
+width: 400px;
+background-color: red;
+padding-top: 20px;
+}
+.submitdiv{
+   
+height: 650px;
+border: 2px solid #304ba3;
+overflow: auto;
+}
+.headline{
+color: black;
+margin-left: 10%;
+}
+.titelvraagdiv{
+    height: 30%;
+    width: 80%;
+    align-self: center;
+border: 1px solid #000000;
+border-radius: 25px;
+margin: 3%;
+}
+.vraagdiv{
+    height: 60%;
+    width: 80%;
+    align-self: center;
+border: 1px solid #000000;
+border-radius: 25px;
+margin: 3%;
+}
+.titelvraagtext{
+    color: black;
+    font-size: x-large;
+    padding-top: 5%;
+}
+.titelvraagtextdiv{
+    height: 20%;
+    margin-top: 1%;
+    margin: 2%
+}
+.titelvraaginvuldiv{
+    height: 60%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.vraagtext{
+    color: black;
+    font-size: x-large;
+    padding-top: 5%;
+}
+.vraagtextdiv{
+    height: 20%;
+    margin: 1%
+}
+.vraaginvuldiv{
+    height: 60%;
+    margin-left: 2%;
+}
+
+
+.logindiv{
+    width: 40%;
+    height: 650px;
+    border: 3px solid var(--bg-color);
+    margin-left: 30%;
+    margin-top: 2%;
+    border-radius: 7px;
+    }
+.logindiv:hover{
+    border-radius: 10px;
+}
+.logintextdiv{
+    height: 20%;
+    width: 50%;
+    margin-left: 25%;
+
+}
+.logintext{
+    color: #304ba3;
+    font-size: 515%;
+    
+}
+.usernamediv{
+    margin-top: 1%;
+    height: 20%;
+    width: 100%;
+    
+}
+#logingebruikersnaam{
+border: 3px solid var(--bg-color);
+border-radius: 4px;
+height: 50%;
+width: 70%;
+margin-left: 15%;
+margin-top: 4%;
+font-size: large;
+}
+#logingebruikersnaam:hover{
+    border: 3px solid #8bced7;
+    height: 50%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 4%;
+    font-size: large;
+    transition: .2s, .3s ease;
+    border-radius: 6px;
+    }
+.wachtwoorddiv{
+    margin-top: 1%;
+    height: 20%;
+    width: 100%;
+}
+#loginwachtwoord{
+border: 3px solid var(--bg-color);
+border-radius: 4px;    
+height: 50%;
+width: 70%;
+margin-left: 15%;
+margin-top: 0%;
+font-size: large;
+}
+#loginwachtwoord:hover{
+    border: 3px solid #8bced7;
+      
+    height: 50%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 0%;
+    font-size: large;
+    transition: .2s, .3s ease;
+    border-radius: 6px;
+    }
+input::placeholder{
+    font-size: large;
+}
+.loginbuttondiv{
+    margin-top: 1%;
+    height: 20%;
+    width: 100%;
+
+}
+.loginbutton{
+    
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    background-color: #304ba3;
+    color: white;
+    border-color: black;
+    width: 22%;
+    margin-left: 39%;
+
+    
+
+}
+.loginbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+
+}
+.registeraanraaddiv{
+    height: 10%;
+    width: 38%;
+    margin-left: 32%;
+
+}
+.registeraanraadtext{
+    color: #304ba3;
+
+}
+#jaardrop{
+    border-color: #304ba3;
+    border-radius: 4px;
+    height: 50%;
+    width: 30%;
+    margin-left: 5%;
+    font-size: large;
+    background-color: white;
+}
+.dropdownjaardiv{
+    height: 20%;
+    width: 100%;
+}
+.jaartextdiv{
+    height: 20%;
+    margin: 1%;
+    margin-left: 4%
+}
+.jaartext{
+    color: black;
+    font-size: x-large;
+    padding-top: 5%;
+}
+
+#vakdrop{
+    border-color: #304ba3;
+    border-radius: 4px;
+    height: 50%;
+    width: 30%;
+    margin-left: 5%;
+    font-size: large;
+    background-color: white;
+}
+.dropdownvakdiv{
+    height: 20%;
+    width: 100%;
+}
+.vaktextdiv{
+    height: 20%;
+    margin: 1%;
+    margin-left: 4%
+}
+.vaktext{
+    color: black;
+    font-size: x-large;
+    padding-top: 5%;
+}
+.submitQbuttondiv{
+    margin-top: 1%;
+    height: 20%;
+    width: 100%;
+
+}
+.submitQbutton{
+    
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    background-color: #304ba3;
+    color: white;
+    border-color: black;
+    width: 10%;
+    margin-left: 5%;
+
+    
+
+}

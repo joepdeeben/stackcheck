@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/stylemain.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta name="viewport" content="with=device-width, initialscale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+    <script src="submitQ.js"></script>
+</head>
+
+<body>
+    
+<iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>   
+
+
+<div class="logindiv" >
+    <div class="logintextdiv">
+        <h1 class="logintext">KI Forum</h1>
+    </div>
+    <div class="usernamediv">
+        <input type="text" id="logingebruikersnaam" name="gebruikersnaam" placeholder=" Gebruikersnaam of E-mail"><br>
+        </div>
+    <div class="wachtwoorddiv">
+        <input type="password" id="loginwachtwoord" name="wachtwoord" placeholder=" Wachtwoord"><br>
+        </div>
+    <div class="loginbuttondiv">
+        <button class="loginbutton" type="submit">Log in</button>
+        </div> 
+    <div class="registeraanraaddiv">
+        <a href="regestratie.html" class="registeraanraadtext">Nog geen account? registreer je nu!</a>
+        </div>   
+    </div>
+    
+
+<iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>   
+
+
+</body>
+</html>

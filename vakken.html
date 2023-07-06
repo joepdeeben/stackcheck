@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="javascript/vakkenfuncties.js"></script>
+    <link rel="stylesheet" href="css/stylemain.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta name="viewport" content="with=device-width, initialscale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <title>Vakken</title>
+
+</head>
+
+<body>
+  <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+  <div class="test-div" id="testid">
+    Vakken
+  </div>
+  
+  <div id="selectiejaren" style="color:red; text-align: center;">
+    Selecteer hier in welk jaar je zit
+
+  </div>
+
+  <div>
+    <button id="buttonjaar1" class="submitQbutton" onclick="ShowYearOne()">Jaar 1</button>
+    <button id="buttonjaar2" class="submitQbutton" onclick="ShowYearTwo()">Jaar 2</button>
+    <button id="buttonjaar3" class="submitQbutton" onclick="ShowYearThree()">Jaar 3</button>
+  </div>
+
+  <div style="left: 10px; right:100px">
+  <iframe id="framejaar1" src="jaar1.html" style="visibility:collapse" width="32%" height="1000px"></iframe>
+  <iframe id="framejaar2" src="jaar2.html" style="visibility:collapse" width="32%" height="1000px"></iframe>
+  <iframe id="framejaar3" src="jaar3.html" style="visibility:collapse" width="32%" height="1000px"></iframe>
+
+  </div>
+
+
+    
+  
+
+  <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/stylemain.css">
+    <meta name="viewport" content="with=device-width, initialscale=1.0">
+    <title>Forum</title>
+</head>
+
+<body>
+
+<iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+<link rel="stylesheet" href="css/forum.css">
+
+<main>
+    <section class="vakken">
+        <h2>Vakken</h2>
+        <ul >
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Calculus</a></li>
+            <li><a href="#">Problem Solving and search</a></li>
+        </ul>
+    </section>
+        <section class="forum-threads">
+        <h2>Recente threads</h2>
+        <ul class="threads">
+            <li>
+                <a href="#">Conjunctieve normaalvorm</a>
+                <span>Gestart door: <a href="#">Username</a></span>
+            </li>
+            <li>
+                <a href="#">Functie python return</a>
+                <span>Gestart door: <a href="#">Username</a></span>
+            </li>
+            <li>
+                <a href="#">algebra</a>
+                <span>Gestart door: <a href="#">Username</a></span>
+            </li>
+        </ul>
+    </section>
+</main>
+<iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+</body>
+</html>

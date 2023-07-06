@@ -1,0 +1,84 @@
+
+form {
+    width: 400px;
+    margin: 5% auto;
+    text-align: left;
+
+  }
+  label {
+    font-weight:bold;
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"], input[type="geslacht"], select{
+    width: 100%;
+    padding: 12px ;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid var(--bg-color) ;
+    border-radius: 4px;
+  }
+  input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover, input[type="geslacht"]:hover, select:hover{
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #8bced7 ;
+    transition: .2s, .3s ease;
+    border-radius: 6px;
+    background: rgb(233, 233, 233);
+  }
+  /* select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 3px solid var(--bg-color) ;
+  }
+  select:hover {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 3px solid #8bced7 ;
+    transition: .2s ease; */
+  /* } */
+  input[type="text"]:active, input[type="email"]:active, input[type="password"]:active, input[type="geslacht"]:active, select:active{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #72a7ae ;
+    transition: .1s ease;
+    border-radius: 8px;
+    background: #ced4cf;
+    
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: var(--bg-color);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #8bced7;
+    border-radius: 20px;
+    transition: .5s; 
+
+
+  }
+  
+  input[type="submit"]:active {
+    background-color: #7da8ae;
+  }
+  
+
+select{
+    font-weight:300;
+}

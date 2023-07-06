@@ -1,0 +1,73 @@
+
+body{
+    min-height: 100vh;
+    background-color: white;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+
+#dothis {
+    color: black;
+    font: sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+#numb {
+    width: 33%;
+    border: 2px green;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    color: black;
+}
+
+#feedback {
+    color: black;
+    font: sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+#showanswer {
+    visibility: hidden;
+}
+
+#ans {
+    color: black;
+    font: sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+.opgave_form {
+    margin-top: 20px;
+
+
+
+
+}
+button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 200px;
+    background-color: #ff6347;
+    border: 2px white;
+    border-radius: 4px;
+    color: white;
+
+
+}
+
+button:hover {
+    background-color: white;
+    color: green;
+}
+
