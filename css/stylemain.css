@@ -34,8 +34,8 @@ header{
     /* padding: 28px 12%; */
     transition: all .5s ease;
     height:80px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;  
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
     
 
@@ -47,7 +47,7 @@ header{
 }
 /* header is hier onder */
 
-.logo{
+#logo{
     display: flex;
     align-items: center;
     padding-left: 5%;

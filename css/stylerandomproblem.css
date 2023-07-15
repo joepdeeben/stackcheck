@@ -1,19 +1,62 @@
 
 body{
     min-height: 100vh;
-    background-color: white;
+    background-color: #FFFFFF;
     color: var(--text-color);
     overflow: hidden;
 }
 
 
-#dothis {
+#kanji {
     color: black;
     font: sans-serif;
     font-size: 40px;
     margin: 20px;
     text-align: center;
 }
+
+#script2 {
+    color: black;
+    font: sans-serif;
+    font-size: 15px;
+    margin: 20px;
+    color: #0E1A2F;
+    text-align: center;
+}
+
+#script {
+    color: var(--bg-color);
+    font: sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+#grade {
+    color: black;
+    font: sans-serif;
+    font-size: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+#hiragana {
+    color: black;
+    font: sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+#katakana {
+    color: black;
+    font: sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
 
 #numb {
     width: 33%;
@@ -30,10 +73,6 @@ body{
     font-size: 40px;
     margin: 20px;
     text-align: center;
-}
-
-#showanswer {
-    visibility: hidden;
 }
 
 #ans {
@@ -58,7 +97,7 @@ button {
     margin: auto;
     padding: 20px;
     width: 200px;
-    background-color: #ff6347;
+    background-color: #a34f30;
     border: 2px white;
     border-radius: 4px;
     color: white;
