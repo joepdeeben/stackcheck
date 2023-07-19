@@ -2,36 +2,40 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/stylemain.css">
-    <meta name="viewport" content="with=device-width, initialscale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="javascript/problemset.js"></script>
-    <title>Give me a problem</title>
+    <title>Study</title>
 </head>
 <body>
+<iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
-    <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+<div class="dropdown">
+    <select id="dropdown-menu">
+        <option value="N5">N5</option>
+        <option value="N4">N4</option>
+        <option value="N3">N3</option>
+        <option value="N2">N2</option>
+        <option value="N1">N1</option>
+    </select>
+</div>
 
-    <div class="opgave_form">
+<div class="opgave_form">
+    <link rel="stylesheet" href="css/stylerandomproblem.css">
+    <button id="giveprob">Start practicing</button>
+    <p id="script">Kanji</p>
+    <p id="kanji"></p>
+    <p id="script2">Grade</p>
+    <p id="grade"></p>
+    <p id="script">Hiragana</p>
+    <p id="hiragana"></p>
+    <p id="script">Katakana</p>
+    <p id="katakana"></p>
+    <!-- <input id="numb"> -->
+    <p id="feedback"></p>
+    <!-- <button type="button" onclick="checkans()" id="checkans">beantwoorden</button> -->
+    <button type="button" onclick="showans()" id="showanswer">Show definition</button>
+    <p id="ans"></p>
+</div>
 
-        <link rel="stylesheet" href="css/stylerandomproblem.css">
-
-        <button onclick="randprob()" id="giveprob">Start practicing</button>
-        <p id="script">Kanji</p>
-        <p id="kanji"></p>
-        <p id="script2">Grade</p>
-        <p id="grade"></p>
-        <p id="script">Hiragana</p>
-        <p id="hiragana"></p>
-        <p id="script">Katakana</p>
-        <p id="katakana"></p>
-<!--        <input id="numb">-->
-        <p id="feedback"></p>
-
-<!--        <button type="button" onclick="checkans()" id="checkans">beantwoorden</button>-->
-
-        <button type="button" onclick="showans()" id="showanswer">Show definition</button>
-
-        <p id="ans"></p>
-
-
-    </div>
 </body>
+</html>

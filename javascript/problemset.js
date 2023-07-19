@@ -1,6 +1,43 @@
 
 
-fetch("kanji5.txt")
+document.addEventListener('DOMContentLoaded', function() {
+lines = [];
+var dropdown = document.getElementById('dropdown-menu'); // Get the dropdown element
+console.log(dropdown)
+var selectedOption = dropdown.value; // Get the selected value
+console.log(selectedOption)
+  dropdown.addEventListener('change', function() {
+    selectedOption = dropdown.value; // Update the variable with the selected value
+    console.log('Selected option: ' + selectedOption);
+    fetch(selectedOption + ".txt")
+      .then(response => response.text())
+      .then(data => {
+        lines = [];
+        data.split("\n").forEach(line => {
+          line = line.trim();
+          line = line.replace(/\./g, ''); // Remove periods
+          let lineArray = line.split(","); // Split by commas
+          if (lineArray.length >= 5) {
+            lineArray[4] = lineArray[4].replace(/\//g, ', '); // Replace '/' with comma in index 4
+            lineArray[2] = lineArray[2].replace(/\s+/g, ', '); // Replace spaces with comma and space in index 2
+            lineArray[3] = lineArray[3].replace(/\s+/g, ', '); // Replace spaces with comma and space in index 3
+            lineArray[2] = lineArray[2].replace(/, /, ''); // Remove the first comma in index 2
+            lineArray[3] = lineArray[3].replace(/, /, ''); // Remove the first comma in index 3
+          }
+          lines.push(lineArray);
+        });
+
+      })
+      .catch(error => {
+        console.log("An error occurred while fetching the file:", error);
+      });
+  });
+
+
+
+
+
+fetch(selectedOption + ".txt")
   .then(response => response.text())
   .then(data => {
     lines = [];
@@ -15,10 +52,9 @@ fetch("kanji5.txt")
         lineArray[2] = lineArray[2].replace(/, /, ''); // Remove the first comma in index 2
         lineArray[3] = lineArray[3].replace(/, /, ''); // Remove the first comma in index 3
       }
-      console.log(lineArray);
       lines.push(lineArray);
     });
-    console.log(lines);
+
   })
   .catch(error => {
     console.log("An error occurred while fetching the file:", error);
@@ -70,3 +106,6 @@ function showans(){
 
 
 }
+var giveprobButton = document.getElementById('giveprob');
+    giveprobButton.addEventListener('click', randprob);
+});
